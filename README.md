@@ -59,14 +59,12 @@ Flex Approach
 Grid Approach
 
 ```html
-<section style="display: grid; grid-template-columns: repeat(3, 1fr); height: 200px">
+<section style="display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: 100%; height: 200px">
   <div style="background: red"></div>
   <div style="background: blue"></div>
   <div style="background: green"></div>
 </section>
 ```
-
-In this case, Grid Approach is a better option.
 
 <br>
 
@@ -77,7 +75,7 @@ In this case, Grid Approach is a better option.
 
 <br>
 
-For images, we should ALWAYS add a picture tag (it's not necessary), but for a Flex Approach we must add it.
+For images, we should **_always_** add a picture tag (it's not necessary), but for a Flex Approach we must add it.
 
 ```html
 <section style="display: flex; height: 200px">
@@ -99,27 +97,25 @@ For images, we should ALWAYS add a picture tag (it's not necessary), but for a F
 
 <br>
 
-For grids, we must add a specific height in each picture tag which should be the same as the parent height.
+Grid Approach
 
 ```html
-<section style="display: grid; grid-template-columns: 1fr 2fr 3fr">
-  <picture style="height: 200px">
+<section style="display: grid; grid-template-columns: 1fr 2fr 3fr; grid-template-rows: 100%; height: 200px">
+  <picture>
     <img src="./img1.jpg" alt="#" />
   </picture>
 
-  <picture style="height: 200px">
+  <picture>
     <img src="./img2.jpg" alt="#" />
   </picture>
 
-  <picture style="height: 200px">
+  <picture>
     <img src="./img3.jpg" alt="#" />
   </picture>
 </section>
 
 <article>Random Text below section parent container</article>
 ```
-
-If you wanna preserve the same height on every breakpoint, fetch approach is better.
 
 <br>
 
