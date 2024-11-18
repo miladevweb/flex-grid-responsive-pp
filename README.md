@@ -68,6 +68,8 @@ Grid Approach
 
 In this case, Grid Approach is a better option.
 
+<br>
+
 </details>
 
 <details>
@@ -118,5 +120,7 @@ For grids, we must add a specific height in each picture tag which should be the
 ```
 
 If you wanna preserve the same height on every breakpoint, fetch approach is better.
+
+<br>
 
 </details>
