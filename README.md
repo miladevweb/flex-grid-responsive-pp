@@ -32,6 +32,7 @@ We can use the display property with grid as value and then add the `grid-templa
 .parent {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 1fr 1fr */
+  grid-template-rows: 100%;
 }
 ```
 
