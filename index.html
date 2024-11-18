@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <title>Flex or Grid</title>
+  </head>
+
+  <body>
+    <!-- Flex -->
+    <h1>Flex</h1>
+
+    <section style="display: flex">
+      <picture style="flex: 1">
+        <img src="./assets/image1.webp" alt="#" />
+      </picture>
+      <picture style="flex: 2">
+        <img src="./assets/image2.webp" alt="#" />
+      </picture>
+      <picture style="flex: 3">
+        <img src="./assets/image3.webp" alt="#" />
+      </picture>
+    </section>
+
+    <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis velit delectus adipisci perferendis. Quaerat provident quod magni aspernatur ut fugiat!</article>
+
+    <!-- Grid -->
+    <h1>Grid</h1>
+    <!-- Parent Content might have a height of 200px -->
+    <section style="display: grid; grid-template-columns: 1fr 2fr 3fr">
+      <!-- We need to add a height in order to preserve the size -->
+      <picture style="height: 200px">
+        <img src="./assets/image1.webp" alt="#" />
+      </picture>
+      <picture style="height: 200px">
+        <img src="./assets/image2.webp" alt="#" />
+      </picture>
+      <picture style="height: 200px">
+        <img src="./assets/image3.webp" alt="#" />
+      </picture>
+    </section>
+
+    <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione explicabo deleniti sint suscipit illum odio rerum reprehenderit blanditiis minima beatae!</article>
+  </body>
+</html>
